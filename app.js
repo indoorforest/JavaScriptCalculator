@@ -1,10 +1,30 @@
-var addNumbers = function() {
+function addNumbers() {
   var num1 = document.getElementById("num1").value;
   var num2 = document.getElementById("num2").value;
   var answer = parseFloat(num1) + parseFloat(num2);
   document.getElementById("answer").innerHTML = answer;
 }
 
+var subtractNumbers = function() {
+  var num1 = document.getElementById("num1").value;
+  var num2 = document.getElementById("num2").value;
+  var answer = parseFloat(num1) - parseFloat(num2);
+  document.getElementById("answer").innerHTML = answer;
+}
+
+var multiplyNumbers = function() {
+  var num1 = document.getElementById("num1").value;
+  var num2 = document.getElementById("num2").value;
+  var answer = parseFloat(num1) * parseFloat(num2);
+  document.getElementById("answer").innerHTML = answer;
+}
+
+var divideNumbers = function() {
+  var num1 = document.getElementById("num1").value;
+  var num2 = document.getElementById("num2").value;
+  var answer = parseFloat(num1) / parseFloat(num2);
+  document.getElementById("answer").innerHTML = answer;
+}
 
 // add nums to an array.  suppose [3,1,4]. num is: 10^ (array.length - i + 1)
 //    * array[i]
