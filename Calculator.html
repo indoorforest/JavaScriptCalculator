@@ -2,17 +2,38 @@
 <html>
 <head>
   <title>Calculator</title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <h1>4 function calculator</h1>
-  <input type = "text" id="num1" placeholder="Enter the first number" />
-  <input type = "text" id="num2" placeholder="Enter the second number" />
-  <button onclick="addNumbers()">Add</button>
-  <button onclick="subtractNumbers()">Subtract</button>
-  <button onclick="multiplyNumbers()">Divide</button>
-  <button onclick="divideNumbers()">Multiply</button>
+  <div class="container">
+    <h1>Calculator</h1>
+    <div class="row">
+      <div class="col-sm-4">
+        <h2 id="answer">--</h2>
+      </div>
+    </div>
 
-  <h2 id="answer"></h2>
+    <div class="row">
+      <div class="col-sm-2">
+        <input class="form-control" type = "text" id="num1" placeholder="Enter the first number" />
+      </div>
+      <div class="col-sm-2">
+        <input class="form-control" type = "text" id="num2" placeholder="Enter the second number" />
+      </div>
+     <!--  <div class="col-sm-4">
+         <h2 id="answer"></h2>
+      </div> -->
+    </div>
+    <div class="blankSpace"></div>
+    <button class="btn" onclick="addNumbers()">Add</button>
+    <button class="btn" onclick="subtractNumbers()">Subtract</button>
+    <button class="btn" onclick="multiplyNumbers()">Multiply</button>
+    <button class="btn" onclick="divideNumbers()">Divide</button>
+  </div>
+  
 
   <script src = "app.js"></script>
 </body>
